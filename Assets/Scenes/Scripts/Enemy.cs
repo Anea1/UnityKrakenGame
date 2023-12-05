@@ -8,13 +8,13 @@ public class Enemy : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-      
+
         Player playerCapsule = other.gameObject.GetComponent<Player>();
 
         if (playerCapsule != null)
         {
             {
-            
+
                 playerCapsule.HitEnemy();
                 Debug.Log("Player killed");
             }

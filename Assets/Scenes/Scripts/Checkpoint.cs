@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class Checkpoint : MonoBehaviour
+public class CheckPoint : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
@@ -11,8 +11,8 @@ public class Checkpoint : MonoBehaviour
         {
             Debug.Log("collided");
             SaveSystem.SavePlayerData(other.gameObject);
-            
+
         }
     }
-   
+
 }
